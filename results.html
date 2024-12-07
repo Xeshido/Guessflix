@@ -34,13 +34,13 @@
                 
                 <div>
                     <div>
-                        <a href="/questions.html" class="circle-btn circle" id="start-quiz">
+                        <a href="questions.html" class="circle-btn circle" id="start-quiz">
                             <h2 class="play-btn">▶</h2>
                         </a>
                     </div>
 
                     <div class="text-center">
-                        <a href="/questions.html" class="col-12 play-again" id="restart-button">PLAY AGAIN</a>
+                        <a href="questions.html" class="col-12 play-again" id="restart-button">PLAY AGAIN</a>
                     </div>
                 </div>
             </div>
@@ -59,10 +59,10 @@
         scoreDisplay.innerText = `${score} out of 20`; 
 
     
-        history.replaceState({}, document.title, "/results.html");
+        history.replaceState({}, document.title, "results.html");
     </script>
     <script>
-        const audio = new Audio('/assets/results.mp3');
+        const audio = new Audio('assets/results.mp3');
 
         audio.loop = true;
 

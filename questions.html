@@ -52,16 +52,16 @@
     <br><br><br>
     <button class="submit" onclick="submitQuiz()">Submit</button>
 
-   <script src="/script.js"></script>
+   <script src="script.js"></script>
    <script>
     function submitQuiz() {
         // Redirect to results page with the score as a URL parameter
-        window.location.href = '/results.html?score=' + score;
+        window.location.href = 'results.html?score=' + score;
     }
     </script>
     <script>
         // Create a new Audio object
-        const audio = new Audio('/assets/music.mp3');
+        const audio = new Audio('assets/music.mp3');
 
         // Set the audio to loop
         audio.loop = true;
