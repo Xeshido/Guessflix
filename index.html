@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>GUESSFLIX</title>
+</head>
+<body class="homepage">
+    <nav class="navbar navbar-style navbar-expand-lg">
+        <div class="navbar-title">
+            <a class="nav-text">GUESSFLIX</a>
+            <div class="nav-links">
+                <a class="nav-text" href="index.html">HOME</a>
+                <a class="nav-text" href="about.html">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="homepage">
+        <div class="image-overlay">
+            <div class="text-content">
+                <h1>GUESSFLIX</h1>
+                <h2>Guess The Movie Character</h2>
+                <p><b>Welcome to GUESSFLIX: Guess The Movie Character!</b> Are you a true movie enthusiast? 
+                    Test your movie knowledge with this fun 20-question quiz and see how well you know these movie characters. 
+                    Ready to take on the challenge? Game on!</p>
+            </div>
+            <div class="circle">
+                <a href="/questions.html" class="circle-btn" id="start-quiz" onclick="playSoundAndRedirect(event)">
+                 <h2 class="play-btn">▶︎</h2>
+                </a>
+                <p class="play-now">PLAY NOW</p>
+            </div>                
+        </div>
+    </div>
+
+    <audio id="audio" src="/assets/herewegosound.mp3" alt="Mario Here We Go Button Click""></audio>
+    
+    <script src="/script.js"></script>
+    <script>
+        const audio = new Audio('/assets/home.mp3');
+
+        audio.loop = true;
+
+        window.onload = () => {
+            audio.play().catch(error => {
+                console.log('Audio playback failed:', error);
+            });
+        };
+    </script>
+</body>
+</html>
+
+
